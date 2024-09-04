@@ -1,0 +1,87 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxes{
+    width: 500px;
+    height: 1000px;
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-left: 200px;
+    border: 2px solid black;
+    position: relative;
+
+    
+}
+/* Absolutepositioning must be set relative to it's parent */
+#box1{
+    background-color: aqua;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+#box2{
+    background-color: blue;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    position: relative;
+    right: 100px;
+
+}
+/* Fixed Possitioning acts just like absolute, it differs in that it doesnt leave the spot where it has been fixed while scrolling */
+#box3{
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    position: fixed;
+    left: 100px;
+}
+    
+
+/* Sticky positioning always ensure the top property is set to zero */
+#box4{
+    background-color: coral;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    position: sticky;
+    top: 0;
+}
+#box5{
+    background-color: burlywood;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    
+}
+#box6{
+    background-color: chartreuse;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
